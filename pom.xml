@@ -8,12 +8,6 @@
   <name>MyMavenApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-        <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.10.1</version>
-      <type>maven-plugin</type>
-    </dependency>
     
     <dependency>
       <groupId>junit</groupId>
@@ -25,6 +19,12 @@
   
   <build>
     <finalName>MyMavenApp</finalName>
-      
+       <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.20</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
